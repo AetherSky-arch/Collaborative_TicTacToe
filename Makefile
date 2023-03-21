@@ -1,18 +1,16 @@
 NAME = morpion
 
-SRCS = main.c affichage.c checkfor_draw.c tableau.h
+OBJ = morpion.o affichage.o checkfor_draw.o
 
 CC = gcc
 
-FLAGS = -Wall -Wextra -Werror
+CFLAGS = -Wall -Wextra -Werror
 
 all: $(NAME)
 
-$(NAME):
-	$(CC) $(FLAGS) -o $(NAME) $(SRCS)
+${OBJ}: tableau.h
+
+$(NAME): ${OBJ}
 
 clean:
-	rm -f *.o
-
-fclean: clean
-	rm -f $(NAME)
+	rm -f ${NAME} ${OBJ}
