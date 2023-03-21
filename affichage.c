@@ -19,8 +19,3 @@ void	affichage(char tableau[11][11])
 		i++;
 	}
 }
-
-int	main(void)
-{
-	affichage(tableau);
-}
