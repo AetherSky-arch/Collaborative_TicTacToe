@@ -4,10 +4,12 @@ SRCS = main.c affichage.c checkfor_draw.c tableau.h
 
 CC = gcc
 
+FLAGS = -Wall -Wextra -Werror
+
 all: $(NAME)
 
 $(NAME):
-	$(CC) -o $(NAME) $(SRCS)
+	$(CC) $(FLAGS) -o $(NAME) $(SRCS)
 
 clean:
 	rm -f *.o

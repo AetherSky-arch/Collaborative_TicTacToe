@@ -1,3 +1,5 @@
+void	affichage(char tableau[11][11]);
+
 int	main(void)
 {
 	char    tableau[11][11] = {
@@ -12,6 +14,8 @@ int	main(void)
 		{'.', '.', '.', '.', '.', '.', '.', '.', '.', '.'},
 		{'.', '.', '.', '.', '.', '.', '.', '.', '.', '.'}
 	};
+
+	affichage(tableau);
 
 	return (0);
 }
