@@ -1,6 +1,7 @@
+#include <stdio.h>
 #include "tableau.h"
 
-int	jouer(char tableau[11][11], int joueur)
+int	jouer(char tableau[11][11], int player)
 {
   int i,j;
   int bool = 0;
@@ -9,11 +10,11 @@ int	jouer(char tableau[11][11], int joueur)
     scanf("%d", &i);
     printf("Entrez une ligne\n");
     scanf("%d", &j);
-    if (tableau[i][j] == ".") {
+    if (tableau[i][j] == '.') {
       if (player == 1) 
-        tableau[i][j] = "X";
+        tableau[i][j] = 'X';
       else 
-        tableau[i][j] = "O";
+        tableau[i][j] = 'O';
       bool = 1;
     }
     
