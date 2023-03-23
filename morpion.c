@@ -1,6 +1,9 @@
+#include "tableau.h"
+
 void	affichage(char tableau[11][11]);
 int	checkfor_draw(char tableau[11][11]);
 int	jouer(char tableau[11][11], int joueur);
+int	start(void);
 
 int	main(void)
 {
@@ -18,5 +21,6 @@ int	main(void)
 	};
 
 	affichage(tableau);
+	printf("%d\n",start());
 	return (0);
 }

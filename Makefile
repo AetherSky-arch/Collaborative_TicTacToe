@@ -1,6 +1,6 @@
 NAME = morpion
 
-OBJ = morpion.o affichage.o checkfor_draw.o jouer.o
+OBJ = morpion.o affichage.o checkfor_draw.o jouer.o start.o
 
 CC = gcc
 
