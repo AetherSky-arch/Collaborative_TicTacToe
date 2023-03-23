@@ -10,10 +10,12 @@ int	jouer(char tableau[11][11], int player)
 	bool = 0;
 	while (bool != 1)
 	{
-		printf("Entrez une colonne (0-9)\n");
+		printf("Entrez une colonne (1-10)\n");
 		scanf("%d", &i);
-		printf("Entrez une ligne (0-9)\n");
+		i -= 1;
+		printf("Entrez une ligne (1-10)\n");
 		scanf("%d", &j);
+		j -= 1;
 		if (tableau[i][j] == '.')
 		{
 			if (player == 1)
